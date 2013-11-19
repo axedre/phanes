@@ -9,12 +9,14 @@ var _ = require("underscore");
 var app = express();
 var server = require("http").createServer(app);
 app.configure(function() {
+    app.set("port", 4000);
     app.use(express.logger("dev"));
     app.use(express.cookieParser());
-    app.use(express.bodyParser());
+    app.use(express.urlencoded())
+    app.use(express.json())
     app.use(express.methodOverride());
     app.use(express.session({
-        secret: ""
+        secret: "phanes"
     }));
     app.use(express.static(__dirname + "/../app"));
     app.use(app.router);
@@ -26,8 +28,7 @@ app.configure(function() {
         // intercept OPTIONS method
         if (req.method === "OPTIONS") {
             res.send(200);
-        }
-        else {
+        } else {
             next();
         }
     });
@@ -36,6 +37,6 @@ app.configure("development", function() {
     app.use(express.errorHandler());
 });
 app.enable("trust proxy");
-server.listen(4000, function() {
-    console.log("Server started");
+server.listen(app.get("port"), function() {
+    console.log("Server started on port", app.get("port"));
 });

@@ -10,5 +10,9 @@ angular.module("phanesApp", [
 ])
 .config(["$routeProvider", function($routeProvider) {
   $routeProvider.when("/", {templateUrl: "partials/view.html", controller: "MyCtrl1"});
+  $routeProvider.when("/grid", {templateUrl: "partials/grid.html", controller: "MyCtrl1"});
+  $routeProvider.when("/navbar-default", {templateUrl: "partials/navbar-default.html", controller: "MyCtrl1"});
+  $routeProvider.when("/navbar-static", {templateUrl: "partials/navbar-static.html", controller: "MyCtrl1"});
+  $routeProvider.when("/navbar-fixed", {templateUrl: "partials/navbar-fixed.html", controller: "MyCtrl1"});
   $routeProvider.otherwise({redirectTo: "/"});
 }]);
