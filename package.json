@@ -1,0 +1,25 @@
+{
+    "name": "phanes",
+    "version": "0.1.0",
+    "description": "A starter project for angular js with some utility js libraries",
+    "author": {
+        "name": "Andrea Aloi",
+        "email": "axedre@gmail.com",
+        "url": "http://axedre.net"
+    },
+    "scripts": {
+        "start": "node server.js & compass watch app/"
+    },
+    "engines": {
+        "node": ">= 0.6.0",
+        "npm": ">= 1.0.0"
+    },
+    "dependencies": {
+        "express": "*",
+        "underscore": "*",
+        "underscore.string": "*"
+    },
+    "devDependencies": {},
+    "bundleDependencies": [],
+    "main": "server.js"
+}

@@ -1,4 +1,4 @@
 phanes
 ======
 
-My angular-seed application with some ready-made JS libraries, SASS bootstrap, ExpressJS server and cache-busting and localization mechanisms
+My AngularJS seed application with a utility JS library, latest bootstrap + ui-bootstrap, ExpressJS server, cache-busting and localization

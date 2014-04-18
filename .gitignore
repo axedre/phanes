@@ -1,3 +1,4 @@
 /app/.sass-cache/
 /nbproject/
-/server/node_modules/
+/node_modules/
+npm-debug.log
