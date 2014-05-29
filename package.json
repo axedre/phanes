@@ -2,6 +2,7 @@
     "name": "phanes",
     "version": "0.1.0",
     "description": "A starter project for angular js with some utility js libraries",
+    "license": "ISC",
     "author": {
         "name": "Andrea Aloi",
         "email": "axedre@gmail.com",
