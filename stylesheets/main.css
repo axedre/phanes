@@ -1,0 +1,21 @@
+.hidden {
+    display: none !important;
+}
+#logo {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: -25px;
+}
+#logo img {
+    width: 200px;
+}
+#title h1 {
+    margin-top: 30px;
+}
+#title h1, #title p {
+    text-align: left !important;
+}
+.clearfix {
+    clear: both;
+}
