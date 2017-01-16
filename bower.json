@@ -2,7 +2,6 @@
     "name": "phanes",
     "homepage": "https://github.com/axedre/phanes",
     "description": "A library of useful things",
-    "version": "1.0.0",
     "main": "phanes.js",
     "keywords": [
         "Phanes"
